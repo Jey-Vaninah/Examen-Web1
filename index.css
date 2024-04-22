@@ -8,8 +8,8 @@
 }
 
 :root {
-    --bleu: rgba(255, 200, 0, 0.886);
-    --rouge: rgba(255, 200, 0, 0.886);
+    --violet: #792359;
+    --jaune: #F1A208;
 }
 
 body {
@@ -22,7 +22,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: black;
+    background-color: var(--violet);
     padding: 10px;
     position: fixed;
     z-index: 1;
@@ -30,17 +30,23 @@ nav {
 }
 
 #accueil {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url(photo/pexels-photo-5756481.webp)fixed center/cover;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(photo/pink.jpg) center/cover; */
+    background-color: #BB868C ;
     width: 100%;
     height: 100vh;
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 5px;
 
+}
+
+.imagefond,
+img {
+    margin-bottom: 9%;
 }
 
 a {
@@ -48,13 +54,34 @@ a {
 }
 
 #nomlogo {
-    color: var(--rouge);
+    color: var(--jaune);
     padding-left: 5vh;
 }
 
 .nom {
-    color: var(--rouge);
+    color: var(--violet);
 }
+
+.recherche {
+    border: 1px var(--jaune) solid;
+    color: white;
+    width: 7vw;
+    border-radius: 3px;
+    height: 5vh;
+    margin:1vh 3vw;
+}
+
+.recherche,p {
+   text-align:  center;
+   margin-top: 1vh;
+}
+
+.recherche:hover{
+    color: black;
+    background-color: var(--jaune) ;
+    cursor: pointer;
+}
+
 
 .navigation a {
     color: rgba(235, 219, 219, 0.913);
@@ -67,11 +94,11 @@ a {
 }
 
 .navigation a:hover {
-    color: var(--bleu);
+    color: var(--jaune);
 
 }
 
-.reseau {
+/* .reseau {
     display: flex;
     flex-direction: row;
     margin-right: 5vh;
@@ -86,7 +113,7 @@ a {
 .icon:hover:hover {
     transform: scale(1.2);
     cursor: pointer;
-}
+} */
 
 .bienvenue {
     color: white;
@@ -101,6 +128,38 @@ a {
     text-align: center;
     margin-bottom: 5vh;
     font-size: 1.1rem;
+}
+
+.incsription:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    color: var(--violet);
+    background-color: white;
+}
+
+.suivi:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    color: white;
+    border: 1px white solid;
+
+
+}
+
+.animation1 {
+    animation: start 2s ease-in-out;
+
+}
+
+@keyframes start {
+    0% {
+        transform: translateY(-200%);
+    }
+
+    100% {
+        transform: translateZ(-50%);
+    }
+
 }
 
 
@@ -124,19 +183,51 @@ button {
 
 .incsription {
     color: white;
-    background-color: var(--bleu);
+    background-color: var(--violet);
     font-weight: bold;
     transition: transform 1s;
 }
 
 
 .suivi {
-    color: var(--bleu);
+    color: var(--violet);
     font-weight: bold;
     transition: transform 1.5s;
     background-color: transparent;
-    border: 1px var(--bleu)solid;
+    border: 1px var(--violet)solid;
 
 }
 
+#propos {
+    /* height: 130vh; */
+    margin-top: 10vh;
+
+}
+
+.premiere {
+    width: 30vw;
+    text-align: justify;
+}
+
+.propos1 {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.premiere h1 {
+    text-align: center;
+    background-color: var(--bleu);
+
+}
+
+.premiere p {
+    text-orientation: sideways-right;
+}
+
+.nous{
+    width: 30%;
+}
 
