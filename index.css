@@ -10,18 +10,15 @@
 :root {
     --violet: #792359;
     --jaune: #F1A208;
-    #titre{
-        color: var(--violet);
-        margin-bottom: 2vh;
-        
-        
-    }
     
+
 }
 
 body {
     height: 400vh;
 }
+
+
 
 nav {
     display: flex;
@@ -39,7 +36,7 @@ nav {
 #accueil {
     /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url(photo/pink.jpg) center/cover; */
-    background-color: #BB868C ;
+    background-color: #BB868C;
     width: 100%;
     height: 100vh;
     position: relative;
@@ -72,20 +69,23 @@ a {
 .recherche {
     border: 1px var(--jaune) solid;
     color: white;
-    width: 7vw;
+    width: 8vw;
     border-radius: 3px;
     height: 5vh;
-    margin:1vh 3vw;
+    margin: 1vh 3vw;
+    
 }
 
-.recherche,p {
-   text-align:  center;
-   margin-top: 1vh;
+.recherche,
+p {
+    text-align: center;
+    margin-top: 1vh;
+   
 }
 
-.recherche:hover{
+.recherche:hover {
     color: black;
-    background-color: var(--jaune) ;
+    background-color: var(--jaune);
     cursor: pointer;
 }
 
@@ -205,44 +205,201 @@ button {
 
 }
 
+/* a propos */
+
 #propos {
-    /* height: 130vh; */
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.activiter {
+    width: 30vw;
+
+}
+
+.activiter p {
+    text-align: start;
+}
+
+.activiter ul {
+    display: flex;
+    flex-direction: column;
+    gap: 9vh;
+}
+
+.activiter li {
+    color: var(--jaune);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.activiter button {
+    background-color: var(--jaune);
+    color: white;
+    font-weight: bold;
+    width: 25vw;
+}
+
+.nous {
+    width: 30%;
+}
+
+/* cours */
+
+#cours {
+    height: 150vh;
+
+}
+
+.introduction {
+    margin-bottom: 5vh;
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(photo/vaninah.webp)fixed center/cover;
+}
+
+.introduction p {
+    font-size: large;
+    color: white;
+    text-align: center;
+    padding: 25vh;
+}
+
+.titre {
+    color: var(--violet);
+    margin: 2vh 0vh 15vh 14vh;
+}
+
+.cours1 img {
+    border-radius: 100%;
+    width: 10vw;
+    height: 20vh;
+    top: -8vh;
+    left: 5vh;
+    position: absolute;
+
+}
+
+.cours1 {
+    width: 25vw;
+    border: 2px black solid;
+    height: 50vh;
+    position: relative;
+
+}
+
+.list-cours {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10vh;
+    gap: 10vh;
+
+}
+
+
+.apprentisage {
+    margin-top: 15vh;
+    padding: 20px;
+}
+
+.apprentisage p {
+    text-align: start;
+}
+
+.membre {
+    margin: 15px 0 0 0px;
+    background-color: var(--jaune);
+    color: black;
+
+}
+
+/* vente */
+#team {
+    height: 150vh;
+}
+
+#team span {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.prof {
     margin-top: 10vh;
 
 }
 
-.premiere {
+.ligne {
     width: 30vw;
-    text-align: justify;
+    color: red;
+    font-weight: bold;
+
 }
 
-.propos1 {
+#team h1 {
+    color: var(--bleu);
+    font-size: 2rem;
+}
 
+.titre {
+    margin-left: 6%;
+}
+
+#team img {
+    width: 21vw;
+    height: 40vh;
+    border-radius: 10px 10px 0 0;
+}
+
+.presentation {
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 
-.premiere h1 {
-    text-align: center;
-    background-color: var(--bleu);
+.prof1 {
+
+    border-radius: 10px;
+    border: 2px rgb(247, 250, 136) solid;
+    height: 55vh;
 
 }
 
-.premiere p {
-    text-orientation: sideways-right;
+.presentation :hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.521);
+
 }
 
-.nous{
-    width: 30%;
+.prof1 :hover {
+    transform: none;
+    box-shadow: none;
+
 }
+
+
 
 /* contact */
 
 #contact {
-    height: 100vh;
-    margin:0 0 15vh 15vh;
+    /* height: 100vh; */
+    margin: 0 0 15vh 15vh;
+
+}
+
+#titre {
+    color: var(--violet);
+    margin-bottom: 2vh;
 
 }
 
@@ -258,7 +415,7 @@ button {
     height: 6vh;
     border: 1px rgba(0, 0, 0, 0.521) solid;
     outline: none;
-   
+
 
 }
 
@@ -293,14 +450,17 @@ button {
 
 
 }
+
 #identifiant:focus {
     border: 1.5px var(--jaune) solid;
 }
+
 #message:focus {
     border: 1.5px var(--jaune) solid;
 }
+
 #sujet:focus {
-    border: 1.5px var(--jaune) solid; 
+    border: 1.5px var(--jaune) solid;
 }
 
 .info {
@@ -318,22 +478,22 @@ button {
     color: rgba(0, 0, 0, 0.781);
     font-size: 0.9rem;
     text-align: start;
-    
+
 }
 
 .envoyer {
     background-color: var(--jaune);
     margin-left: 60vh;
-    color:black;
-    border:1px  var(--jaune) solid;
-    
-   
+    color: black;
+    border: 1px var(--jaune) solid;
+
+
 }
 
 footer {
 
     width: 100%;
-    height: 13vh;
+    /* height: 13vh; */
     background-color: var(--violet);
     text-align: center;
     font-size: 14px;
@@ -345,7 +505,7 @@ footer p {
     padding-top: 6px;
 }
 
-footer span{
+footer span {
     color: var(--jaune);
 }
 
@@ -354,4 +514,3 @@ footer span{
     border-radius: 5px;
 
 }
-
