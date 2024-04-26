@@ -10,7 +10,7 @@
 :root {
     --violet: #792359;
     --jaune: #F1A208;
-    
+
 
 }
 
@@ -50,7 +50,7 @@ nav {
 
 .imagefond,
 img {
-    margin-bottom: 9%;
+    margin-bottom: 10%;
 }
 
 a {
@@ -73,14 +73,14 @@ a {
     border-radius: 3px;
     height: 5vh;
     margin: 1vh 3vw;
-    
+
 }
 
 .recherche,
 p {
     text-align: center;
     margin-top: 1vh;
-   
+
 }
 
 .recherche:hover {
@@ -227,7 +227,7 @@ button {
 .activiter ul {
     display: flex;
     flex-direction: column;
-    gap: 9vh;
+    gap: 8vh;
 }
 
 .activiter li {
@@ -243,15 +243,17 @@ button {
     width: 25vw;
     border: 1px var(--jaune)solid;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
-    
+
 }
-.click:hover{
+
+.click:hover {
 
     cursor: pointer;
     transform: scale(1.01);
     background-color: var(--violet);
     color: var(--jaune);
 }
+
 .nous {
     width: 30%;
 }
@@ -269,8 +271,8 @@ button {
     height: 50vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
         url(photo/fond1.avif)fixed center/cover;
-      background-position: 50% 0 0 0;
-        
+    background-position: 50% 0 0 0;
+
 }
 
 .introduction p {
@@ -316,13 +318,14 @@ button {
 .apprentisage {
     margin-top: 15vh;
     padding: 20px;
-    display:flex ;
+    display: flex;
     flex-direction: column;
     gap: 4vh;
 }
-.apprentisage h2{
-color: var(--jaune);
-margin-bottom: 2vh;
+
+.apprentisage h2 {
+    color: var(--jaune);
+    margin-bottom: 2vh;
 }
 
 .apprentisage p {
@@ -338,7 +341,8 @@ margin-bottom: 2vh;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.16);
 
 }
-.membre:hover{
+
+.membre:hover {
     cursor: pointer;
     transform: scale(1.01);
     background-color: var(--violet);
@@ -352,7 +356,7 @@ margin-bottom: 2vh;
     margin-left: 2vw;
 }
 
-.titre2  {
+.titre2 {
     color: var(--violet);
     margin: 0 0 5vh 10vh;
 }
@@ -478,7 +482,7 @@ margin-bottom: 2vh;
 }
 
 .info h2 {
-    
+
     color: var(--jaune);
 }
 
@@ -497,7 +501,8 @@ margin-bottom: 2vh;
 
 
 }
-.envoyer:hover{
+
+.envoyer:hover {
     transform: scale(1.05);
     cursor: pointer;
     color: white;
@@ -528,3 +533,108 @@ footer span {
     border-radius: 5px;
 
 }
+
+/* responsive */
+
+@media screen and (min-width:1920px),
+(min-height:1080px) {
+
+    .navigation a {
+        font-size: 1.5rem;
+    }
+
+    #nomlogo {
+        font-size: 2rem;
+    }
+
+    .recherche p {
+        font-size: 1.3rem;
+    }
+
+    .bienvenue {
+        font-size: 3rem;
+    }
+
+    .incsription {
+        width: 10vw;
+        height: 8vh;
+        font-size: 1.3rem;
+    }
+
+    .suivi {
+        width: 10vw;
+        height: 8vh;
+        font-size: 1.3rem;
+    }
+
+    .imagefond,
+    img {
+        margin-bottom: 6%;
+        width: 140%;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .activiter li {
+        font-size: 2rem;
+    }
+
+    .activiter ul {
+        gap: 4vh;
+    }
+
+    .introduction p{
+        font-size: 2rem;
+    }
+
+    .membre{
+        font-size: 1.3rem;
+    }
+
+    .click{
+        font-size: 1.5rem;
+    }
+
+
+
+    .animation1 p{
+        font-size: 1.5rem;
+    }
+
+    .titre, .titre2, #contactMe{
+        font-size: 3rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+    .local p{
+        font-size: 1.3rem;
+    }
+
+    ::placeholder{
+        font-size: 1.2rem;
+    }
+    .envoyer{
+        font-size: 1.3rem;
+        margin-left: 50vh;
+    }
+
+    .map{
+        width: 93%;
+    }
+
+    .nous{
+        width: 32%;
+    }
+    strong{
+        font-size: 1.8rem;
+    }
+    #vente {
+        height: 140vh;
+        margin-left: 2vw;
+    }
+}
+
