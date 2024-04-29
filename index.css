@@ -39,7 +39,6 @@ nav {
     background-color: #BB868C;
     width: 100%;
     height: 100vh;
-    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -48,9 +47,11 @@ nav {
 
 }
 
-.imagefond,
-img {
-    margin-bottom: 10%;
+
+
+.fond {
+    display: block;
+    margin-bottom: 9vh;
 }
 
 a {
@@ -73,15 +74,11 @@ a {
     border-radius: 3px;
     height: 5vh;
     margin: 1vh 3vw;
+    background-color: transparent;
 
 }
 
-.recherche,
-p {
-    text-align: center;
-    margin-top: 1vh;
 
-}
 
 .recherche:hover {
     color: black;
@@ -538,6 +535,9 @@ footer span {
 
 @media screen and (min-width:1920px),
 (min-height:1080px) {
+    nav {
+        height: 10vh;
+    }
 
     .navigation a {
         font-size: 1.5rem;
@@ -547,11 +547,17 @@ footer span {
         font-size: 2rem;
     }
 
-    .recherche p {
-        font-size: 1.3rem;
+    .recherche {
+        font-size: 1.5rem;
+        width: 10vw;
+    }
+    .fond {
+        display: block;
+        width: 50%;
+        margin-bottom: 1vh;
     }
 
-    .bienvenue {
+    /* .bienvenue {
         font-size: 3rem;
     }
 
@@ -585,56 +591,61 @@ footer span {
         gap: 4vh;
     }
 
-    .introduction p{
+    .introduction p {
         font-size: 2rem;
     }
 
-    .membre{
+    .membre {
         font-size: 1.3rem;
     }
 
-    .click{
+    .click {
         font-size: 1.5rem;
     }
 
 
 
-    .animation1 p{
+    .animation1 p {
         font-size: 1.5rem;
     }
 
-    .titre, .titre2, #contactMe{
+    .titre,
+    .titre2,
+    #contactMe {
         font-size: 3rem;
     }
 
-    h2{
+    h2 {
         font-size: 2rem;
     }
-    .local p{
+
+    .local p {
         font-size: 1.3rem;
     }
 
-    ::placeholder{
+    ::placeholder {
         font-size: 1.2rem;
     }
-    .envoyer{
+
+    .envoyer {
         font-size: 1.3rem;
         margin-left: 50vh;
     }
 
-    .map{
+    .map {
         width: 93%;
     }
 
-    .nous{
+    .nous {
         width: 32%;
     }
-    strong{
+
+    strong {
         font-size: 1.8rem;
     }
+
     #vente {
         height: 140vh;
         margin-left: 2vw;
-    }
+    } */
 }
-
