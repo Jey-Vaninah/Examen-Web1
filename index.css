@@ -15,7 +15,9 @@
 }
 
 body {
-    height: 400vh;
+    width: 100%;
+    background-color: #F1A208;
+    height: fit-content;
 }
 
 
@@ -31,11 +33,11 @@ nav {
     position: fixed;
     z-index: 1;
     height: 8vh;
+    top: 0;
 }
 
 #accueil {
-    /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url(photo/pink.jpg) center/cover; */
+
     background-color: #BB868C;
     width: 100%;
     height: 100vh;
@@ -47,12 +49,30 @@ nav {
 
 }
 
-
-
-.fond {
-    display: block;
-    margin-bottom: 9vh;
+.imageFond {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.imageFond img {
+    width: 90%;
+    height: 100%;
+}
+
+.animation1 {
+    animation: start 2s ease-in-out;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 a {
     text-decoration: none;
@@ -65,6 +85,7 @@ a {
 
 .nom {
     color: var(--violet);
+    font-size: 3rem;
 }
 
 .recherche {
@@ -102,6 +123,10 @@ a {
 
 }
 
+.menu {
+    display: none;
+}
+
 /* .reseau {
     display: flex;
     flex-direction: row;
@@ -126,12 +151,18 @@ a {
 
 }
 
-#accueil p {
+/* #accueil  {
     color: white;
     font-weight: bold;
     text-align: center;
     margin-bottom: 5vh;
     font-size: 1.1rem;
+} */
+.citation {
+    margin: 2vh;
+    color: white;
+    text-align: center;
+
 }
 
 .incsription:hover {
@@ -150,10 +181,7 @@ a {
 
 }
 
-.animation1 {
-    animation: start 2s ease-in-out;
 
-}
 
 @keyframes start {
     0% {
@@ -259,11 +287,12 @@ button {
 
 #cours {
     height: 140vh;
+    width: 100%;
 
 }
 
 .introduction {
-    margin-bottom: 5vh;
+    margin-top: 5vh;
     width: 100%;
     height: 50vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
@@ -308,6 +337,7 @@ button {
     justify-content: center;
     margin-top: 10vh;
     gap: 10vh;
+
 
 }
 
@@ -373,6 +403,7 @@ button {
     flex-direction: row;
     justify-content: center;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .venteArt {
@@ -401,14 +432,14 @@ button {
 /* contact */
 
 #contact {
-
-    margin: 0 0 15vh 15vh;
+    width: 100%;
+    /* margin: 0 0 15vh 15vh; */
 
 }
 
 #titre {
     color: var(--violet);
-    margin-bottom: 2vh;
+    margin: 2vh 15vh;
 
 }
 
@@ -417,10 +448,15 @@ button {
     display: block;
     border: none;
     height: 300px;
+    /* margin-left: 15vh; */
+}
+
+.input {
+    width: 80%;
 }
 
 #identifiant {
-    width: 31vw;
+    width: 42%;
     height: 6vh;
     border: 1px rgba(0, 0, 0, 0.521) solid;
     outline: none;
@@ -429,7 +465,7 @@ button {
 }
 
 #sujet {
-    width: 64vw;
+    width: 86%;
     height: 6vh;
     margin-bottom: 3vh;
     border: 1px rgba(0, 0, 0, 0.521) solid;
@@ -438,7 +474,7 @@ button {
 }
 
 #message {
-    width: 64vw;
+    width: 86%;
     height: 20vh;
     margin-bottom: 2vh;
     outline: none;
@@ -448,7 +484,8 @@ button {
     display: flex;
     flex-direction: row;
     gap: 8%;
-    margin-top: 7vh;
+    margin: 7vh 0 0 15vh;
+
 }
 
 .deuxInput {
@@ -492,9 +529,10 @@ button {
 
 .envoyer {
     background-color: var(--jaune);
-    margin-left: 60vh;
+    margin-left: 40%;
     color: black;
     border: 1px var(--jaune) solid;
+    margin-bottom: 2vh;
 
 
 }
@@ -535,53 +573,46 @@ footer span {
 
 @media screen and (min-width:1920px),
 (min-height:1080px) {
+
+    p {
+        font-size: 1.7rem;
+    }
+
     nav {
-        height: 10vh;
+        height: 15vh;
+        position: fixed;
     }
 
     .navigation a {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     #nomlogo {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .recherche {
         font-size: 1.5rem;
         width: 10vw;
     }
-    .fond {
-        display: block;
-        width: 50%;
-        margin-bottom: 1vh;
-    }
 
-    /* .bienvenue {
-        font-size: 3rem;
+
+    .bienvenue {
+        font-size: 3.7rem;
     }
 
     .incsription {
         width: 10vw;
         height: 8vh;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     .suivi {
         width: 10vw;
         height: 8vh;
-        font-size: 1.3rem;
-    }
-
-    .imagefond,
-    img {
-        margin-bottom: 6%;
-        width: 140%;
-    }
-
-    p {
         font-size: 1.5rem;
     }
+
 
     .activiter li {
         font-size: 2rem;
@@ -647,5 +678,201 @@ footer span {
     #vente {
         height: 140vh;
         margin-left: 2vw;
-    } */
+    }
+
+    .fond {
+        width: 120%;
+        margin-bottom: 8vh;
+    }
+
+    .nom {
+        font-size: 3rem;
+    }
+
+}
+
+
+@media screen and (max-width:412px) {
+
+
+    .imageFond {
+        display: none;
+    }
+
+    .animation1 {
+        width: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+            url(photo/pink.jpg) center/cover;
+        background-position: 10% 50%;
+        height: 100%;
+        justify-content: flex-end;
+
+
+
+    }
+
+    #accueil {
+
+        flex-direction: column-reverse;
+        height: 60vh;
+
+
+
+    }
+
+
+    a {
+        font-size: 1.3rem;
+    }
+
+    .navigation .menu-nav {
+        height: fit-content;
+        display: flex;
+        position: absolute;
+        display: none;
+        background-color: var(--violet);
+    }
+
+    .navigation .menu {
+        display: block;
+        width: 30px;
+        height: 20px;
+        /* margin: 5vh; */
+
+    }
+
+    .navigation:hover .menu-nav {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 50vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    .team {
+        width: 100%;
+
+    }
+
+    .recherche {
+        width: 150px;
+    }
+
+    #nomlogo {
+        padding: 0;
+        text-align: center;
+        margin-right: 40%;
+        font-size: 1.6rem;
+
+    }
+
+    .bouton {
+        margin: 3vh;
+    }
+
+    .suivi {
+        color: white;
+        border: 1px solid white;
+        backdrop-filter: blur(50px);
+    }
+
+    .incsription:hover {
+        color: white;
+        border: 1px solid white;
+        backdrop-filter: blur(50px);
+        background-color: transparent;
+    }
+
+    .suivi:hover {
+        background-color: var(--violet);
+        border: none;
+
+    }
+
+
+
+    .activiter {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .activiter p {
+        text-align: center;
+    }
+
+    .click {
+        margin-left: 20%;
+        width: 60%;
+    }
+
+    .nous {
+        display: none;
+    }
+
+    /* cours */
+
+    .titre,
+    .titre2 {
+        margin: 0;
+    }
+
+    .introduction {
+        display: none;
+    }
+
+    .cours1 {
+        width: 80%;
+        height: 45vh;
+
+
+    }
+
+    .cours1 img {
+        /* border-radius: 50%; */
+        width: 40vw;
+        height: 20vh;
+        top: -8vh;
+        left: 3vh;
+
+
+    }
+
+    .list-cours {
+
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    #cours {
+        height: 180vh;
+    }
+
+    /* vente */
+
+    #vente {
+        height: 470vh;
+    }
+
+    .venteArt {
+
+        border-radius: 10px;
+        border: 2px rgb(247, 250, 136) solid;
+        height: 55vh;
+        width: 80%;
+    }
+
+    #vente img {
+        width: 100%;
+        height: 40vh;
+        border-radius: 10px 10px 0 0;
+    }
+
 }
