@@ -37,6 +37,15 @@ nav {
     top: 0;
 }
 
+#check {
+    display: none;
+}
+
+label {
+    display: none;
+}
+
+
 #accueil {
 
     background-color: #BB868C;
@@ -59,19 +68,19 @@ nav {
 }
 
 .imageFond img {
-    width: 80%;
+    width: 90%;
     height: 100%;
 }
 
 .animation1 {
     animation: start 2s ease-in-out;
-    width: 50%;
+    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 20vh;
 }
 
 
@@ -139,9 +148,10 @@ a {
 }
 
 .citation {
-    margin: 2vh;
+    margin-bottom: 2vh;
     color: white;
     text-align: center;
+
 
 }
 
@@ -229,14 +239,14 @@ button {
 
 .activiter p {
     text-align: start;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: justify;
 }
 
 .activiter ul {
     display: flex;
     flex-direction: column;
-    gap: 8vh;
+    gap: 10vh;
 }
 
 .activiter li {
@@ -270,31 +280,15 @@ button {
 /* cours */
 
 #cours {
-    height: 140vh;
+    height: 85vh;
     width: 100%;
 
 }
 
-.introduction {
-    margin-top: 5vh;
-    width: 100%;
-    height: 50vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-        url(photo/fond1.avif)fixed center/cover;
-    background-position: 50% 0 0 0;
-
-}
-
-.introduction p {
-    font-size: 1rem;
-    color: white;
-    text-align: center;
-    padding: 25vh;
-}
 
 .titre {
     color: var(--violet);
-    margin: 2vh 0vh 15vh 14vh;
+    margin: 10vh 0vh 15vh 14vh;
 }
 
 .cours1 img {
@@ -312,7 +306,8 @@ button {
     border: 2px var(--violet) solid;
     height: 48vh;
     position: relative;
-
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+        url(photo/love1.jpeg)fixed center/cover;
 
 }
 
@@ -342,26 +337,25 @@ button {
 
 .apprentisage p {
     text-align: start;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-align: justify;
+    color: white;
 }
 
 .membre {
     margin: 15px 0 0 0px;
     color: white;
-    border: 1px var(--jaune)solid;
-
+    border: white 1px solid;
     font-size: 0.7rem;
-    background-color: var(--violet);
+    background-color: transparent;
 
 }
 
 .membre:hover {
     cursor: pointer;
     transform: scale(1.01);
-    background-color: #F1A208;
+    background-color: var(--jaune);
     color: black;
-    /* box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.16); */
 
 
 }
@@ -397,12 +391,16 @@ button {
 
     border-radius: 10px;
     border: 2px black solid;
-    height: 55vh;
+    height: 57vh;
 
 }
 
 .venteArt h2 {
     text-align: center;
+}
+
+.venteArt span {
+    font-size: 1rem;
 }
 
 .presentation :hover {
@@ -420,25 +418,21 @@ button {
 
 .commander {
     width: 21vw;
-    margin: 2.7vh 0 0 0;
+    margin: 2.8vh 0 0 0;
     border-radius: 0px 0px 8px 8px;
-    /* background-color: black;
-    color: white; */
+    background-color: black;
+    color: white;
     font-weight: bold;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.701);
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
 
 
 }
 
 .commander:hover {
-    /* font-weight: bold;
+    font-weight: bold;
     color: black;
     background-color: rgba(255, 255, 255, 0.701);
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3); */
-    background-color: black;
-    color: white;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+
 }
 
 
@@ -475,11 +469,16 @@ button {
     width: 80%;
 }
 
+
+
+
 #identifiant {
     width: 42%;
     height: 6vh;
     border: 1px rgba(0, 0, 0, 0.521) solid;
     outline: none;
+
+    padding: 1rem;
 
 
 }
@@ -490,6 +489,8 @@ button {
     margin-bottom: 3vh;
     border: 1px rgba(0, 0, 0, 0.521) solid;
     outline: none;
+    padding: 1rem;
+
 
 }
 
@@ -498,6 +499,7 @@ button {
     height: 20vh;
     margin-bottom: 2vh;
     outline: none;
+    padding: 1rem;
 }
 
 .texte_moi {
@@ -519,14 +521,22 @@ button {
 
 #identifiant:focus {
     border: 1.5px var(--jaune) solid;
+    padding: 2vh;
+    border-radius: 5px;
 }
 
 #message:focus {
     border: 1.5px var(--jaune) solid;
+    padding: 2vh;
+    border-radius: 5px;
 }
 
 #sujet:focus {
     border: 1.5px var(--jaune) solid;
+    padding: 2vh;
+    border-radius: 5px;
+
+
 }
 
 .info {
@@ -536,16 +546,17 @@ button {
 }
 
 .info h2 {
-
+    font-size: 1.3rem;
     color: var(--jaune);
 }
 
 .info p {
     color: rgba(0, 0, 0, 0.781);
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-align: start;
 
 }
+
 
 .envoyer {
     background-color: var(--jaune);
@@ -588,6 +599,7 @@ footer span {
 
 }
 
+
 /* responsive */
 
 @media screen and (min-width:1920px),
@@ -615,18 +627,20 @@ footer span {
     }
 
     .imageFond img {
-        width: 90%;
+        width: 100%;
     }
 
+
+
     .bienvenue {
-        font-size: 2.8rem;
+        font-size: 3rem;
     }
 
     .incsription {
         width: 10vw;
         height: 8vh;
         font-size: 1.5rem;
-        font-weight: 100;
+
     }
 
     .incsription:hover {
@@ -644,10 +658,16 @@ footer span {
 
     .activiter li {
         font-size: 2.2rem;
+
     }
 
     .activiter ul {
-        gap: 3vh;
+        gap: 10vh;
+    }
+
+    .nous {
+        width: 50%;
+
     }
 
     .activiter p {
@@ -682,6 +702,10 @@ footer span {
         height: 50vh;
     }
 
+    .venteArt span {
+        font-size: 1.5rem;
+    }
+
 
     .titre,
     .titre2,
@@ -689,17 +713,30 @@ footer span {
         font-size: 3rem;
     }
 
-    h2 {
-        font-size: 2rem;
-    }
 
     .commander {
         font-size: 1.5rem;
         margin: 3.6vh 0 0 0;
     }
 
-    .local p {
-        font-size: 1.3rem;
+    .venteArt h2 {
+        font-size: 2rem;
+    }
+
+    .info h2 {
+        font-size: 2.3rem;
+        color: var(--jaune);
+    }
+
+    .info p {
+        color: rgba(0, 0, 0, 0.781);
+        font-size: 1.5rem;
+        text-align: start;
+
+    }
+
+    .info {
+        gap: 10vh;
     }
 
     ::placeholder {
@@ -715,9 +752,7 @@ footer span {
         width: 83%;
     }
 
-    .nous {
-        width: 50%;
-    }
+
 
     strong {
         font-size: 2rem;
@@ -740,9 +775,10 @@ footer span {
     .nom {
         font-size: 3rem;
     }
-
+    
 }
 
+/* resposive pixel 7 */
 
 @media screen and (max-width:412px) {
 
@@ -780,7 +816,17 @@ footer span {
         position: absolute;
         display: none;
         background-color: var(--violet);
+        animation: letGo 1s ease-in;
+
     }
+
+    @keyframes letGo {
+        0% {
+            transform: translateY(-200%);
+        }
+
+    }
+
 
     .navigation .menu {
         display: block;
@@ -863,7 +909,8 @@ footer span {
     .activiter {
         flex-direction: column;
         width: 100%;
-
+        padding: 4vh;
+        margin-top: -5vh;
     }
 
     .activiter p {
@@ -882,6 +929,7 @@ footer span {
 
     /* cours */
 
+
     .titre,
     .titre2 {
         margin: 0;
@@ -894,7 +942,8 @@ footer span {
     .cours1 {
         width: 90%;
         height: 43vh;
-
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+            url(photo/love1.jpeg)center/cover;
 
     }
 
@@ -917,19 +966,33 @@ footer span {
     }
 
     #cours {
-        height: 180vh;
+        height: 170vh;
     }
+
+    .apprentisage p {
+        font-size: 1rem;
+    }
+
+    .apprentisage h2 {
+        font-size: 1.8rem;
+    }
+
+    .membre {
+        font-size: 1rem;
+    }
+
 
     /* vente */
 
     #vente {
-        height: 470vh;
+        height: 485vh;
     }
 
     .venteArt {
 
         border-radius: 10px;
         width: 90%;
+        height: 56vh;
     }
 
     #vente img {
@@ -1004,30 +1067,29 @@ footer span {
 
     }
 
+    label {
+        display: block;
+        margin-top: 5vh;
+        margin-left: 2vh;
+        color: white;
+        font-size: 7vw;
+        margin-bottom: -2vh;
+
+    }
+
+    .memu-nav a {
+        position: fixed;
+    }
+
+
+    #check:checked ~ .lien-check {
+        left: 0;
+        position: 0;
+    }
+
+    .lien-check {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
-
-
-/* @media screen and (min-width:1280px),
-(min-height:800px) {
-    .navigation a {
-        font-size: 1.2rem;
-    }
-
-    .recherche {
-        width: 12vw;
-        height: 5vh;
-        font-size: 1rem;
-    }
-
-    .imageFond img {
-        width: 120%;
-    }
-
-    .animation1 {
-        width: 60%;
-    }
-
-    .commander {
-        margin: 3.7vh 0 0 0;
-    }
-} */
