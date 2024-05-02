@@ -418,7 +418,7 @@ button {
 
 .commander {
     width: 21vw;
-    margin: 2.8vh 0 0 0;
+    margin-left: 0;
     border-radius: 0px 0px 8px 8px;
     background-color: black;
     color: white;
@@ -542,7 +542,7 @@ button {
 .info {
     display: flex;
     flex-direction: column;
-    gap: 20%;
+    gap: 18%;
 }
 
 .info h2 {
@@ -716,7 +716,7 @@ footer span {
 
     .commander {
         font-size: 1.5rem;
-        margin: 3.6vh 0 0 0;
+        margin: 1.9vh 0 0 0;
     }
 
     .venteArt h2 {
@@ -736,7 +736,7 @@ footer span {
     }
 
     .info {
-        gap: 10vh;
+        gap: 8vh;
     }
 
     ::placeholder {
@@ -775,7 +775,7 @@ footer span {
     .nom {
         font-size: 3rem;
     }
-    
+
 }
 
 /* resposive pixel 7 */
@@ -966,7 +966,7 @@ footer span {
     }
 
     #cours {
-        height: 170vh;
+        height: 185vh;
     }
 
     .apprentisage p {
@@ -981,6 +981,9 @@ footer span {
         font-size: 1rem;
     }
 
+    .cours1 {
+        height: 50vh;
+    }
 
     /* vente */
 
@@ -1003,7 +1006,7 @@ footer span {
 
     .commander {
         width: 87.5vw;
-        margin: 4vh 0 0 0;
+        margin: 1vh 0 0 0;
         border-radius: 0px 0px 10px 10px;
     }
 
@@ -1082,7 +1085,7 @@ footer span {
     }
 
 
-    #check:checked ~ .lien-check {
+    #check:checked~.lien-check {
         left: 0;
         position: 0;
     }
@@ -1092,4 +1095,7 @@ footer span {
         flex-direction: column;
     }
 
+    check :hover .lien-check {
+        display: none;
+    }
 }
